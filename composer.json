@@ -1,0 +1,30 @@
+{
+    "name": "kangdev/fulu",
+    "description": "2023年福禄开放平台API接口封装FuLu Open API SDK",
+    "keywords": ["fulu", "fuluSDK","kangdev"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kangdev\\Fulu\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "php-dev",
+            "email": "php-dev@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.8",
+        "hanson/foundation-sdk": "^5.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.2",
+        "phpunit/phpunit": "^8.5"
+    }
+}
