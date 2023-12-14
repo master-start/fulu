@@ -31,7 +31,7 @@ $server = new \Kangdev\Fulu\FuLuServer($config);
 $server->postData([
     'method' => 'fulu.goods.list.get',
     'product_name' => "腾讯Q币"
-],'post');
+],'json');
 
 // 获取商品信息接口
 $server->postData([
@@ -46,4 +46,4 @@ $server->postData([
 - 当online=0(沙箱环境)时，AppKey、AppSecret、MemberCode非必需；
 - 当online=1(生产环境)时，正式环境相关参数为必需项。
 - method 为接口方法名称，其余的为请求参数，公共请求参数已封装无需公共参数。
-- 请求方式有：json、post、get、upload
+- 请求方式有：json、post、get、upload 一般默认为json，其他格式可能接口不支持

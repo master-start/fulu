@@ -13,7 +13,7 @@ class Api extends BaseConfig
      * @return mixed
      * @throws \Exception
      */
-    public function postData(array $params, string $method = 'post'){
+    public function postData(array $params, string $method = 'json'){
         try {
             ApiException::checkData($params);
             return $this->request($params, $method);
