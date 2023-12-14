@@ -8,7 +8,7 @@ use Hanson\Foundation\Foundation;
  * Class FuLu
  * @package KangDev\FuLu
  *
- * @method array postData($params)
+ * @method array postData($params,$method)
  */
 class FuLuServer extends Foundation
 {
@@ -17,7 +17,7 @@ class FuLuServer extends Foundation
     public function __construct($config)
     {
         parent::__construct($config);
-        $this->apiService = new BaseConfig($config);
+        $this->apiService = new Api($config);
     }
 
     public function __call($name, $arguments)

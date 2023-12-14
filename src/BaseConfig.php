@@ -190,6 +190,9 @@ class BaseConfig extends AbstractAPI
             case "get":
                 $response = $http->get($url, $param);
                 break;
+            case "upload":
+                $response = $http->upload($url, $param);
+                break;
             default:
                 $response = $http->post($url, $param);
         }
