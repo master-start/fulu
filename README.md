@@ -10,6 +10,8 @@ composer require kangdev/fulu
 示例：
 ```php
 <?php
+
+//此config配置可全局封装
 $config = [
     'AppKey'      => 'your-app_key',
     'AppSecret'   => 'your-app_secret',
@@ -23,7 +25,6 @@ $config = [
         'permission' => 0777,
     ],
 ];
-
 $server = new \Kangdev\Fulu\FuLuServer($config);
 
 
